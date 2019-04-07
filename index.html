@@ -4,15 +4,27 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ESRI Map</title>
+    <title>ESRI Map by Ahmed Hussein Abdelhak</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/light/main.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://js.arcgis.com/4.11/"></script>
 </head>
 
 <body>
+
     <div id="viewDiv"></div>
+    <div id="dash">
+        <p>Dashboard</p>
+        <select name="DropDown_STATES" id="drop-states">
+            <option value="">All STATES</option>
+        </select>
+
+        <input type="text" name="Capital" id="drop-capital" value="Capital" readonly>
+        <div id="chart_div"></div>
+    </div>
+
     <script src="main.js"></script>
 </body>
 
